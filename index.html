@@ -4,30 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Serene Sips V2</title>
   </head>
   <body>
     <!-- header section -->
-    <header>
+    <header id="header">
       <h1>Welcome to Senere Sips</h1>
       <p>Indulge in the finest coffee experience crafted just for you.</p>
-      <a href="#">Explore Our Menu</a>
+      <a href="#our-menu">Explore Our Menu</a>
     </header>
 
     <!-- nav section -->
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#our-menu">Menu</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
       </ul>
     </nav>
 
     <!-- our-menu section -->
     <section id="our-menu">
       <h2>Our Menu</h2>
+      <!-- coffee selections -->
       <div class="menu">
         <h3>Coffee Selections</h3>
         <div class="card">
@@ -87,6 +94,7 @@
           <a href="#">Order</a>
         </div>
       </div>
+      <!-- delicious snacks -->
       <div class="menu">
         <h3>Delicious Snacks</h3>
         <div class="card">
@@ -204,8 +212,10 @@
 
     <!-- footer section -->
     <footer>
-      <a href="#">&uArr;</a>
-      <p>Copyright &copy; 2024. Serene Sips Cafe. All Rights Reserved.</p>
+      <p>
+        <a href="#header">&uArr;</a>
+        Copyright &copy; 2024. Serene Sips Cafe. All Rights Reserved.
+      </p>
     </footer>
   </body>
 </html>
