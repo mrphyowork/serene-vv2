@@ -11,9 +11,13 @@ body {
 
 /* header section */
 header {
-  border: 2px solid black;
+  border-bottom: 2px solid black;
   text-align: center;
   padding: 50px;
+  background-image: url(images/bg-img1.png), url(images/bg-img3.png);
+  background-size: contain, contain;
+  background-position: left, right;
+  background-repeat: no-repeat;
 }
 
 header h1 {
@@ -38,6 +42,11 @@ header a {
   text-decoration: none;
   margin: 10px auto 0;
   border-radius: 4px;
+  transition: 1s;
+}
+
+header a:hover {
+  scale: 1.2;
 }
 
 /* nav section */
@@ -48,6 +57,7 @@ nav {
   font-family: "Lato", sans-serif;
   position: sticky;
   top: 0px;
+  margin-top: 30px;
 }
 
 nav ul li {
@@ -87,17 +97,30 @@ footer {
   padding: 10px 0;
 }
 
+#our-menu h3 {
+  margin-top: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
 .card {
   border: 2px solid black;
   width: 250px;
   padding: 10px;
   text-align: center;
   border-radius: 8px;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 .card-img-top {
   max-width: 100%;
   border-radius: 8px;
+  height: 250px;
 }
 
 .card-heading {
@@ -123,6 +146,10 @@ footer {
   border-radius: 8px;
 }
 
+.btn:hover {
+  background-color: #efe0c5;
+}
+
 /* about-us section */
 #about-us p,
 #contact-us p,
@@ -138,6 +165,55 @@ footer p {
   font-family: "Lato", sans-serif;
 }
 
+.form {
+  /* border: 1px solid black; */
+  width: 50%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.form1 {
+  /* border: 1px solid black; */
+  width: 50%;
+  height: 110px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.text-box-size {
+  width: 30%;
+  height: 40px;
+  border-radius: 8px;
+  /* margin-left: 60px; */
+  position: absolute;
+  bottom: 10px;
+  left: 150px;
+}
+
+.msg-box-size {
+  width: 40%;
+  height: 80px;
+  border-radius: 8px;
+  overflow: auto;
+  /* margin-left: 60px; */
+  position: absolute;
+  top: 10px;
+  left: 150px;
+}
+
+.sub {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  margin-left: 150px;
+  background-color: #49281a;
+  color: white;
+}
+
+.sub:hover {
+  background-color: #f3bf76;
+}
+
 /* footer section */
 footer p {
   /* font-family: "Lato", sans-serif; */
@@ -149,4 +225,11 @@ footer a {
   position: fixed;
   bottom: 40px;
   right: 30px;
+  font-weight: 900;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #49281a;
+  background-color: white;
+  border-radius: 50%;
+  padding-top: 12px;
 }
